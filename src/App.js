@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
-import logo from './images/logo.svg';
-import './css/App.css';
+import React, { Component } from "react";
+import logo from "./images/logo.svg";
+import "./css/App.css";
 
 const Demo = () => {
-    return (
-        <div>
-            <h3>
-                This is a demo stateless component.
-            </h3>
-            {this.props.dstring}
-        </div>
-    )
+  return (
+    <div>
+      <h3>This is a demo stateless component.</h3>
+      {this.props.dstring}
+    </div>
+  );
 };
 
 class App extends Component {
@@ -24,15 +22,11 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-          <p>
-              You know the drill: HELLO, WORLD! (TEST)
-          </p>
-          <Demo dstring='anonymous prop string'/>
+        <p>You know the drill: HELLO, WORLD! (TEST)</p>
+        <Demo dstring="anonymous prop string" />
       </div>
     );
   }
 }
-
-
 
 export default App;
