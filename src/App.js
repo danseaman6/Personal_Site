@@ -1,15 +1,8 @@
 import React, { Component } from "react";
 import logo from "./images/logo.svg";
 import "./css/App.css";
-
-const Demo = () => {
-  return (
-    <div>
-      <h3>This is a demo stateless component.</h3>
-      {this.props.dstring}
-    </div>
-  );
-};
+import {Button}  from 'react-bootstrap';
+import Demo from "demo";
 
 class App extends Component {
   render() {
@@ -23,7 +16,10 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <p>You know the drill: HELLO, WORLD! (TEST)</p>
-        <Demo dstring="anonymous prop string" />
+        <Button disabled={true}>
+          This is a demo
+        </Button>
+        <Demo dstring="try this stateless component"/>
       </div>
     );
   }
