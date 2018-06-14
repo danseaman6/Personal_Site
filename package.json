@@ -2,6 +2,7 @@
   "name": "personal_site",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://danseaman6.github.io/about",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "husky": "^0.14.3",
@@ -15,6 +16,8 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -22,6 +25,7 @@
   },
   "devDependencies": {
     "eslint": "^4.19.1",
-    "eslint-plugin-react": "^7.8.2"
+    "eslint-plugin-react": "^7.8.2",
+    "gh-pages": "^1.2.0"
   }
 }

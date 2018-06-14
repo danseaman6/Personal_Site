@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import headshot from "./images/headshot.jpg";
-import facebook from "./images/facebook.png";
 import linkedin from "./images/linkedin.png";
 import github from "./images/github.png";
 import "bootstrap/dist/css/bootstrap.css";
@@ -14,19 +13,12 @@ class App extends Component {
         <header className="App-header">
           <img src={headshot} className="App-headshot" alt="headshot" />
           <h1 className="App-title">Dan Seaman</h1>
+          <h2>Cambridge/Boston</h2>
           <h3>Software Engineer</h3>
         </header>
         <Grid className="App-icon-grid">
           <Row>
-            <Col xs={12} sm={4} md={2} lg={2} mdOffset={3} lgOffset={3}>
-              <Button
-                className="App-icon-button"
-                href="https://www.facebook.com/danseaman6"
-              >
-                <img src={facebook} className="App-link-icon" alt="facebook" />
-              </Button>
-            </Col>
-            <Col xs={12} sm={4} md={2} lg={2}>
+            <Col xs={12} sm={3} md={2} lg={2} smOffset={3} mdOffset={4} lgOffset={4}>
               <Button
                 className="App-icon-button"
                 href="https://linkedin.com/in/danseaman6"
